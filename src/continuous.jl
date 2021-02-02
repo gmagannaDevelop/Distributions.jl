@@ -28,6 +28,8 @@ md"""
 
 # ╔═╡ e64dfd22-60ae-11eb-0a06-05c3bd1198ff
 md"""
+# Lois continues
+
 Afin de faciliter la recherche et compréhension des concepts, je vais utiliser parfois des abbreviations en anglais. Je veux simplement présenter des différentes loix, enlister leurs paramètres et essayer de les expliquer tout d'abord pour confirmer ma propre compréhension de celles-ci et puis pour faciliter l'apprentissage de ceux qui me suivront.
 """
 
@@ -40,6 +42,9 @@ md"""
 * F
 * X^2
 """
+
+# ╔═╡ 090dfb62-658e-11eb-1635-1d021fed9d2e
+plotly()
 
 # ╔═╡ e4886b96-60af-11eb-3446-3781f9e0a830
 md"""
@@ -80,16 +85,31 @@ end
 x = n_lower:0.1:n_upper;
 
 # ╔═╡ 6c8090ac-6583-11eb-1e5d-5fc9d3bcfe76
-plot(x, Normale.(x, μ, σ))
+begin
+	n_pdf = plot(x, Normale.(x, μ, σ), legend=false)
+	title!("Densité de Probabilité")
+end
+
+# ╔═╡ 19afa73c-6588-11eb-2487-9da0cdeb4612
+begin
+	plot(x, cumsum(Normale.(x, μ, σ)), legend=false)
+	title!("Fonction de répartition")
+end
+
+# ╔═╡ d09ee836-658d-11eb-082c-e79a6e76d453
+
 
 # ╔═╡ Cell order:
 # ╟─b8c02e5c-60ae-11eb-3406-71a8af749eb1
 # ╟─e64dfd22-60ae-11eb-0a06-05c3bd1198ff
 # ╠═8e20343c-657f-11eb-07c6-c90cd368c3c2
 # ╠═6710a438-60b3-11eb-3f4d-1f20bf10632b
+# ╠═090dfb62-658e-11eb-1635-1d021fed9d2e
 # ╟─e4886b96-60af-11eb-3446-3781f9e0a830
 # ╠═87df4316-624f-11eb-3c51-4719053a20a8
-# ╠═6c8090ac-6583-11eb-1e5d-5fc9d3bcfe76
-# ╠═948f84e0-6583-11eb-0a94-b7cff41c8a8d
+# ╟─6c8090ac-6583-11eb-1e5d-5fc9d3bcfe76
+# ╟─948f84e0-6583-11eb-0a94-b7cff41c8a8d
 # ╟─dd4d901a-6582-11eb-2060-61d87809df7f
 # ╟─eabbaf28-6250-11eb-086b-5bd8739b310d
+# ╟─19afa73c-6588-11eb-2487-9da0cdeb4612
+# ╠═d09ee836-658d-11eb-082c-e79a6e76d453
