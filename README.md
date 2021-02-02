@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+# Distributions.jl
 
-You can use the [editor on GitHub](https://github.com/gmagannaDevelop/Distributions.jl/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Bienvenue !
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Souvent on doit travailler avec des lois de probabilité parce que, après tout, on est aussi biostatisticiens, pas seulement bioinformaticiens. On peut apprendre tout par cœur, et galérer dans ce processus. Ou bien, on peut essayer de construire une intuition de ce chaque distribution représente. 
 
-### Markdown
+Dès que j’ai commencé ma formation, j’ai été convaincu que l’une des meilleures formes de bien retenir et mieux comprendre n’importe quel sujet mathématique est le visualiser. C’est pour cela que j’ai créé ce répertoire. Pour m’aider à garder une image intuitive et naturelle de ce que chaque loi veut dire. Afin de comprendre pourquoi les données issues de certaines expériences ont-elles une certaine distribution et pas une autre.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Indexe
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gmagannaDevelop/Distributions.jl/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. [Lois continues](build/continuous.html)
