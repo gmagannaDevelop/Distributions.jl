@@ -10,6 +10,4 @@ Dès que j’ai commencé ma formation, j’ai été convaincu que l’une des m
 
 ## Indexe
 
-
-
-1. [Lois continues](build/continuous.html)
+1. [Lois continues](build/continuous.jl.html)
